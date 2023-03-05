@@ -1,99 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
+#clockContainer{  
+    margin-top: 4vw;
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw; 
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey , -5px -5px 5px 5px grey;
 }
 .main{
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    color: aliceblue;
-    background-color: black;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
-.container{
-    position: relative;
-    height: 20vw;   /* 50 vh == 500px */
-    width: 20vw;
-    margin-top: 20px;
-    border: 2px solid black;
-    /* border-radius: 50%; */
-    /* box-shadow: 3px 3px 10px wheat , -3px -3px 10px wheat ; */
-    /* background-color: rgb(231, 231, 220); */
+.head{
+    font-size: 2rem;
 }
-#hour , #minutes , #second{
+span{
+    color: teal;
+}
+#day{
+    color: blueviolet;
+    display: flex;
     position: absolute;
-    background: blue;
-    border-radius: 10px;
+    top:11%;
+    left: 40%;
+    z-index: 9999;
+    font-size: 1vw;
+}
+h5{
+    margin-right: 1vw;
+    font-weight: bolder;
+    font-size: larger;
+}
+#twelve{
+    position: absolute;
+    top: 0%;
+    left: 42%;
+    font-size: 5vw;
+}
+#three{
+    position: absolute;
+    top: 40%;
+    right:0%;
+    font-size: 5vw;
+}
+#six{
+    position: absolute;
+    bottom: 0%;
+    left: 42%;
+    font-size: 5vw;
+}
+#nine{
+    position: absolute;
+    top: 40%;
+    left:0%;
+    font-size: 5vw;
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    /* background: black; */
+    border-radius: 10px; 
     transform-origin: bottom;
 }
 #hour{
-    width: 1%;
+    width: 1.8%;
+    height: 25%;
+    border: 0.5px solid red;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
     height: 30%;
-    
-    transform-origin: bottom;
+    top: 19%;
+    left: 48.9%;
+    border: 0.5px solid black;
+    opacity: 0.8;  
 }
 #second{
-    width: 2%;
-    height: 40%;
-    transform-origin: bottom;
-}
-#minutes{
     width: 1%;
-    height: 35%;
-   
-    transform-origin: bottom;
+    height: 40%;
+    border: 0.5px solid green;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
 }
-/* }
-span{
-    color: darkgrey;
-}
-.clock-face{
-height: 100%;
-width: 100%;
-position: relative;
-}
-.hand{
-    width: 50%;
-    height: 2%;
-    border-radius: 10px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    /* transform: rotate(90deg); */
-    /* transform-origin: 100%;
-}
-.hand2{
-    height: 1%;
-    /* transform: rotate(99deg); */
-    /* transform-origin: 100%;
-    background-color: aquamarine;
-}
-.hand1{
-    height: 1%;
-    /* transform: rotate(20deg); */
-    /* transform-origin: 100%;
-    background-color: blue;
-} */ 
-
-/* @media (max-width:599px){
-    .container{
-        height: 300px ;
-        width: 300px;
+@media (max-width:665px){
+    .f{
+        margin-top: 20%;
     }
-    .clockhead{
-        font-size: 19px;
-    }
-    span{
-        font-size: 25px;
+    #clockContainer{
+        margin-top: 2%;
     }
 }
-@media (max-width:399px){
-    .clockhead{
-        font-size: 15px;
-    }
-    span{
-        font-size: 19px;
-    }
-} */
