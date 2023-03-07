@@ -1,11 +1,16 @@
 #clockContainer{  
     margin-top: 4vw;
     position: relative;
+    /* display:flex ;
+    text-align: center;
+    justify-content: center; */
     margin: auto;
     height: 40vw;
+    /* background-image: url("sq400-703668-Tiverton-Black-Skeleton-Wall-Clock-80cm-diameter.jpg");
+    background-size: cover; */
     width: 40vw; 
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 5px 5px 5px 5px grey , -5px -5px 5px 5px grey;
 }
 .main{
@@ -35,61 +40,105 @@ h5{
     font-weight: bolder;
     font-size: larger;
 }
-#twelve{
+.houre{
+    font-size: 2vw;
     position: absolute;
-    top: 0%;
-    left: 42%;
-    font-size: 5vw;
+    color: black
 }
-#three{
-    position: absolute;
-    top: 40%;
-    right:0%;
-    font-size: 5vw;
+.hour1{
+    top: 4vw;
+    right: 11vw;
 }
-#six{
-    position: absolute;
-    bottom: 0%;
-    left: 42%;
-    font-size: 5vw;
+.hour2{
+    top: 10vw;
+    right: 5vw;
 }
-#nine{
-    position: absolute;
-    top: 40%;
-    left:0%;
-    font-size: 5vw;
+.hour3{
+    top: 19vw;
+    right: 2vw;
+}
+.hour4{
+    bottom: 11vw;
+    right: 4.5vw;
+}
+.hour5{
+    bottom: 4.5vw;
+    right: 11vw;
+}
+.hour6{
+    bottom: 2vw;
+    right: 20vw;
+}
+.hour7{
+    bottom: 5vw;
+    left: 11vw;
+}
+.hour8{
+    bottom: 11vw;
+    left: 5vw;
+}
+.hour9{
+    bottom: 19vw;
+    left: 3vw;
+}
+.hour10{
+    top: 10vw;
+    left: 5vw;
+}
+.hour11{
+    top: 4vw;
+    left: 11vw;
+}
+.hour12{
+    top: 2vw;
+    right: 19vw;
 }
 
+/* hands */
 #hour, #minute, #second{
     position: absolute;
-    /* background: black; */
     border-radius: 10px; 
     transform-origin: bottom;
 }
+/* cubic-bezier(0.1, 2.7, 0.58, 1) */
 #hour{
-    width: 1.8%;
-    height: 25%;
-    border: 0.5px solid red;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;  
+    width: 0.9vw;
+    height: 8vw;
+    top: 12vw;
+    z-index: 1;
+    left: 19vw;
+    /* border: 0.5px solid black; */
+    background-color: green;
+    opacity: 0.8;
+}
+.dot{
+    position: absolute;
+    top: 18.7vw;
+    left: 18.2vw;
+    height: 2vw;
+    border-radius: 50%;
+    z-index: 4;
+    background-color: black;
+    width: 2vw;
 }
 #minute{
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.9%;
-    border: 0.5px solid black;
-    opacity: 0.8;  
+    width: 0.5vw;
+    z-index: 2;
+    height: 13vw;
+    top: 6.5vw;
+    left: 19vw;
+    /* border: 0.5px solid black; */
+    background-color: orange;  
 }
 #second{
-    width: 1%;
-    height: 40%;
-    border: 0.5px solid green;
-    top: 9%;
-    left: 49.25%;
-    opacity: 0.8; 
-    
+    width: 0.2vw;
+    height: 14vw;
+    top: 5.5vw;
+    z-index: 3;
+    left: 19.3vw;
+    /* border: 0.5px solid black; */
+    background-color: blue;
+    transition: transform 1.5s ease;
 }
 @media (max-width:665px){
     .f{
