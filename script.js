@@ -11,3 +11,9 @@ setInterval(() => {
     second.style.transform = `rotate(${srotation}deg)`;
 }, 1000);
 
+let arr = ['jan','feb' ,'march', 'april','may','june','luly','aug','sep','oct','now','dec'];
+let arr1 = ['sunday','monday','tuesday','wednesday','thrusday','friday','saturday']
+let hdate= new Date();
+document.getElementById("date").innerHTML=`${hdate.getDate()}`
+document.getElementById("month").innerHTML=`${arr[hdate.getMonth()]}`
+document.getElementById("day1").innerHTML=`${arr1[hdate.getDay()]}`
