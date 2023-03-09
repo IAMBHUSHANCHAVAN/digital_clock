@@ -7,8 +7,6 @@
     position: relative;
     margin: auto;
     height: 40vw;
-    /* background-image: url("sq400-703668-Tiverton-Black-Skeleton-Wall-Clock-80cm-diameter.jpg");
-    background-size: cover;                   this image is taken for reference  */
     width: 40vw; 
     border: 1px solid rgb(255, 255, 255);
     background-color: black;
@@ -185,15 +183,18 @@ span{
 }
 @media (max-width:400px){
     .dot{
-        height: 0.9rem;
-        width: 0.9rem;
+        height: 1.9vw;
+        width: 1.9vw;
+        left: 18vw;
+        /* display: none; */
+    }
+    #minute{
+        border: 1px solid white;
+    }
+    #hour{
+        border: 1px solid white;
+    }
+    #second{
+        height: 14.5vw;
     }
 }
-/* @keyframes myfirst {
-    0%{
-        transform: rotate(deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
