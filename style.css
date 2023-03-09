@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #clockContainer{  
     margin-top: 4vw;
     position: relative;
@@ -6,10 +10,10 @@
     /* background-image: url("sq400-703668-Tiverton-Black-Skeleton-Wall-Clock-80cm-diameter.jpg");
     background-size: cover;                   this image is taken for reference  */
     width: 40vw; 
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     background-color: black;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px 5px grey , -5px -5px 5px 5px grey;
+    box-shadow: rgba(240, 234, 234, 0.979) 0px 10px 50px;
 }
 .main{
     display: flex;
@@ -17,9 +21,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: black;
 }
 #day1{
-    color: blueviolet;
     display: flex;
     position: absolute;
     top:15%;
@@ -28,9 +32,12 @@
     font-size: 3vw;
     color: wheat;
     text-transform: uppercase;
+    margin-top: 6%;
 }
 .head{
+    margin-top: 10vh;
     font-size: 2rem;
+    color: white;
 }
 /* span{
     color: teal;
@@ -41,6 +48,7 @@
     position: absolute;
     text-transform: uppercase;
     top:11%;
+    margin-top: 5%;
     left: 36%;
     z-index: 9999;
     font-size: 2vw;
@@ -58,15 +66,7 @@ h5{
     color: white;
 }
 span{
-    animation: anime 3s ease infinite ;
-}
-@keyframes anime {
-    from{
-        text-shadow: 0px 0px 20px lightblue;
-    }
-    to{
-        text-shadow: 0px 0px 20px rgb(6, 183, 241);
-    }
+    color: rgb(11, 129, 129);
 }
 .hour1{
     top: 4vw;
@@ -125,9 +125,9 @@ span{
 }
 /* cubic-bezier(0.1, 2.7, 0.58, 1) */
 #hour{
-    width: 0.9vw;
+    width: 0.8vw;
     height: 8vw;
-    top: 12vw;
+    top: 11.5vw;
     z-index: 1;
     left: 19vw;
     /* border: 0.5px solid black; */
@@ -136,8 +136,8 @@ span{
 }
 .dot{
     position: absolute;
-    top: 18.7vw;
-    left: 18.2vw;
+    top: 18.9vw;
+    left: 18.4vw;
     height: 2vw;
     border-radius: 50%;
     z-index: 4;
@@ -172,6 +172,21 @@ span{
     }
     #clockContainer{
         margin-top: 2%;
+    }
+    #second{
+        left: 19.5vw;
+    }
+}
+@media (max-width:800px){
+    .dot{
+        height: 1rem;
+        width: 1rem;
+    }
+}
+@media (max-width:400px){
+    .dot{
+        height: 0.9rem;
+        width: 0.9rem;
     }
 }
 /* @keyframes myfirst {
